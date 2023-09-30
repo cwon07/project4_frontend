@@ -2,9 +2,9 @@ import { Link, useLoaderData, Form } from "react-router-dom";
 import styles from './Show.module.scss'
 
 function Show(props) {
-  const post = useLoaderData()
+    const post = useLoaderData()
     return <>
-    <div className={styles.showDetails}>
+        <div className={styles.showDetails}>
         <h2>Update Interview Details</h2>
         <Form method="post" action={`/update/${post.id}`}>
         Company:<input
@@ -79,9 +79,10 @@ function Show(props) {
         <Form method="post" action={`/delete/${post.id}`}>
             <button>Delete Interview Details</button>
         </Form>
+    
+        <Link to="/">Back to Index</Link>
+        
       </div>
-
-      <Link to="/">Back to Index</Link>
       </>
 }
 
