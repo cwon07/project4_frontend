@@ -7,7 +7,7 @@ function Index (props){
     return <>
     <div className={styles.interviewDetails}>
         <h2 className='title'>👩🏽‍💻 Interview Tracker 🧑🏻‍💻</h2>
-        <img src='https://miro.medium.com/v2/resize:fit:1400/format:webp/1*sMGslGWsF7NX9plhHRKFog.png'/>
+        <img src='https://miro.medium.com/v2/resize:fit:1400/format:webp/1*sMGslGWsF7NX9plhHRKFog.png' alt='interview image'/>
         <h4 className='subtitle'>Interview Details 🔍 </h4>
         <Form method="post" action="/create">
             Company: <input type="text" name="company" placeholder="Name of the company"/>
