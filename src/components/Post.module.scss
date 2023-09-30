@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&display=swap');
 
+.paperBackground {
+    margin-left: 200px;
+}
+
 .postDetails {
     padding: 50px;
     text-align: left;
 
     h2 {
         font-family: 'Alegreya Sans SC', sans-serif;
-        text-align: center;
-        margin: 0;
+        text-align: left;
+        margin: 0 0 20px 20px;
     }
 
 }

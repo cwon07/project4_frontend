@@ -12,6 +12,7 @@ function Post ({post}){
         padding: theme.spacing(2),
         ...theme.typography.body2,
         textAlign: 'left',
+        
     }));
 
     return <div className={styles.postDetails}> 
