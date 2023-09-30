@@ -53,12 +53,12 @@ export const updateAction = async({request, params}) => {
         },
         body: JSON.stringify(updateTodo)
     })
-    return redirect('/')
+    return redirect("/")
 }
 
+// delete action
 export const deleteAction = async({params}) => {
     const id = params.id
-   
     await fetch(url + id, {
         method: "delete"
     })

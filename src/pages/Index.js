@@ -1,24 +1,26 @@
 import Post from '../components/Post';
 import { useLoaderData, Form } from 'react-router-dom';
+import styles from './Index.module.scss'
 
 function Index (props){
     const todos = useLoaderData()
     return <>
-    <div style={{textAlign: "center"}}>
-        <h2>Interview Preparation</h2>
-        <h4>Company Details</h4>
+    <div className={styles.interviewDetails}>
+        <h2 className='title'>👩🏽‍💻 Interview Tracker 🧑🏻‍💻</h2>
+        <img src='https://miro.medium.com/v2/resize:fit:1400/format:webp/1*sMGslGWsF7NX9plhHRKFog.png'/>
+        <h4 className='subtitle'>Interview Details 🔍 </h4>
         <Form method="post" action="/create">
-            <input type="text" name="company" placeholder="Name of the company"/>
-            <input type="text" name="about" placeholder="About the company"/>
-            <input type="text" name="process" placeholder="Interview process"/>
-            <input type="text" name="remarks" placeholder="Anything notable about the company"/>
-            <input type="text" name="companyBenefits" placeholder="What benefits do they offer?"/>
-            <input type="text" name="questionsToAsk" placeholder="Questions to ask the interviewer"/>
-            <input type="text" name="questionsToAnswer" placeholder="List any questions they may ask"/>
-            <input type="text" name="technicalSkills" placeholder="Technical skills to prepare for the interview"/>
-            <input type="text" name="softSkills" placeholder="List any soft skills they'd like you to have"/>
-            <input type="text" name="cultureFit" placeholder="What is their company culture like?"/>
-            <input type="text" name="helpfulLinks" placeholder="Links to sites that may help you prepare"/>
+            Company: <input type="text" name="company" placeholder="Name of the company"/>
+            Position: <input type="text" name="about" placeholder="Position you're applying to"/>
+            Process: <input type="text" name="process" placeholder="Interview processes"/>
+            Location: <input type="text" name="remarks" placeholder="What city/country is the company located? Remote?"/>
+            Benefits: <input type="text" name="companyBenefits" placeholder="What benefits do they offer?"/>
+            Questions to Ask: <input type="text" name="questionsToAsk" placeholder="Questions to ask the interviewer"/>
+            Questions to Expect: <input type="text" name="questionsToAnswer" placeholder="List any questions they may ask"/>
+            Technical Skills: <input type="text" name="technicalSkills" placeholder="Technical skills to prepare for the interview"/>
+            Soft Skills: <input type="text" name="softSkills" placeholder="List any soft skills they'd like you to have"/>
+            Culture Fit: <input type="text" name="cultureFit" placeholder="What is their company culture like?"/>
+            Job Post Link: <input type="text" name="helpfulLinks" placeholder="The job posting link"/>
             <button>Save the Details</button>
         </Form>
         </div>

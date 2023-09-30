@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&display=swap');
+
+.interviewDetails {
+    background-color: ivory;
+
+    h2 {
+        font-family: 'Alegreya Sans SC', sans-serif;
+        text-align: center;
+        padding: 40px;
+    }    
+
+    img {
+        width:70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+
+    h4 {
+        font-family: 'Alegreya Sans SC', sans-serif;
+        text-align: center;
+    }
+
+    form {
+        text-align: center;
+        width: 70%;
+        margin-left: 300px;
+    }
+}
