@@ -6,9 +6,9 @@ function Index (props){
     const todos = useLoaderData()
     return <>
     <div className={styles.interviewDetails}>
-        <h2 className='title'>👩🏽‍💻 Interview Tracker 🧑🏻‍💻</h2>
+        <h1 className='title'>👩🏽‍💻 Interview Tracker 🧑🏻‍💻</h1>
         <img src='https://miro.medium.com/v2/resize:fit:1400/format:webp/1*sMGslGWsF7NX9plhHRKFog.png' alt='interview image'/>
-        <h4 className='subtitle'>Interview Details 🔍 </h4>
+        <h2 className='subtitle'>Interview Details 🔍 </h2>
         <Form method="post" action="/create">
             Company: <input type="text" name="company" placeholder="Name of the company"/>
             Position: <input type="text" name="about" placeholder="Position you're applying to"/>

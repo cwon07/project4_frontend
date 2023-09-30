@@ -32,7 +32,7 @@ export const createAction = async({request}) => {
 export const updateAction = async({request, params}) => {
     const id = params.id
     const formData = await request.formData();
-    const updateTodo = {
+    const updatedTodo = {
         company: formData.get("subject"),
         about: formData.get("about"),
         process: formData.get("process"),
@@ -51,9 +51,9 @@ export const updateAction = async({request, params}) => {
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify(updateTodo)
+        body: JSON.stringify(updatedTodo)
     })
-    return redirect("/")
+    return redirect('/')
 }
 
 // delete action

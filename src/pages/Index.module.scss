@@ -3,7 +3,7 @@
 .interviewDetails {
     background-color: ivory;
 
-    h2 {
+    h1 {
         font-family: 'Alegreya Sans SC', sans-serif;
         text-align: center;
         padding: 40px;
@@ -17,7 +17,7 @@
         margin-bottom: 40px;
     }
 
-    h4 {
+    h2 {
         font-family: 'Alegreya Sans SC', sans-serif;
         text-align: center;
     }
@@ -26,5 +26,9 @@
         text-align: center;
         width: 70%;
         margin-left: 300px;
+    }
+
+    button {
+        margin: 20px 0 20px 0;
     }
 }
